@@ -16,7 +16,7 @@ export const PRODUCTS_CATEGORIES = [
 		featured: [
 			{ name: "Favorite Icon Picks", href: "#", imageSrc: "/nav/icons/bestsellers.jpg" },
 			{ name: "New Arrivals", href: "#", imageSrc: "/nav/icons/new.jpg" },
-			{ name: "Bestsellers", href: "#", imageSrc: "/nav/icons/picks.jpg" },
+			{ name: "Bestselling Icons", href: "#", imageSrc: "/nav/icons/picks.jpg" },
 		],
 	},
 ];
