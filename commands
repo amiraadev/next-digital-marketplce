@@ -1,3 +1,6 @@
 npm i lucide-react
 npx shadcn-ui@latest add sheet
 npx shadcn-ui@latest add separator 
+npm i express
+npm i -D @types/express
+npm i dotenv
