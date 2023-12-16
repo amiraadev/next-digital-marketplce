@@ -42,43 +42,41 @@ const NavItem = ({ category, handleOpen, isOpen, isAnyOpen }: NavItemProps) => {
 						aria-hidden='true'
 					/>
 
-<div className='relative bg-white'>
-            <div className='mx-auto max-w-7xl px-8'>
-              <div className='grid grid-cols-4 gap-x-8 gap-y-10 py-16'>
-                <div className='col-span-4 col-start-1 grid grid-cols-3 gap-x-8'>
-                  {category.featured.map((item) => (
-                    <div
-                      onClick={() => close}
-                      key={item.name}
-                      className='group relative text-base sm:text-sm'>
-                      <div className='relative aspect-video overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75'>
-                        <Image
-                          src={item.imageSrc}
-                          alt='product category image'
-                          fill
-                          className='object-cover object-center'
-                        />
-                      </div>
+					<div className='relative bg-white'>
+						<div className='mx-auto max-w-7xl px-8'>
+							<div className='grid grid-cols-4 gap-x-8 gap-y-10 py-16'>
+								<div className='col-span-4 col-start-1 grid grid-cols-3 gap-x-8'>
+									{category.featured.map((item) => (
+										<div
+											onClick={() => close}
+											key={item.name}
+											className='group relative text-base sm:text-sm'>
+											<div className='relative aspect-video overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75'>
+												<Image
+													src={item.imageSrc}
+													alt='product category image'
+													fill
+													className='object-cover object-center'
+												/>
+											</div>
 
-                      <Link
-                        href={item.href}
-                        className='mt-6 block font-medium text-gray-900'>
-                        {item.name}
-                      </Link>
-                      <p
-                        className='mt-1'
-                        aria-hidden='true'>
-                        Shop now
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ) : null}
-    </div>
+											<Link
+												href={item.href}
+												className='mt-6 block font-medium text-gray-900'>
+												{item.name}
+											</Link>
+											<p className='mt-1' aria-hidden='true'>
+												Shop now
+											</p>
+										</div>
+									))}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			) : null}
+		</div>
 	);
 };
 export default NavItem;
