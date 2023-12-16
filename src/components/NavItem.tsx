@@ -42,7 +42,7 @@ const NavItem = ({ category, handleOpen, isOpen, isAnyOpen }: NavItemProps) => {
 						aria-hidden='true'
 					/>
 
-					<div className='relative bg-white'>
+					<div className='relative bg-zinc-900'>
 						<div className='mx-auto max-w-7xl px-8'>
 							<div className='grid grid-cols-4 gap-x-8 gap-y-10 py-16'>
 								<div className='col-span-4 col-start-1 grid grid-cols-3 gap-x-8'>
@@ -62,10 +62,10 @@ const NavItem = ({ category, handleOpen, isOpen, isAnyOpen }: NavItemProps) => {
 
 											<Link
 												href={item.href}
-												className='mt-6 block font-medium text-gray-900'>
+												className='mt-6 block font-medium text-gray-300'>
 												{item.name}
 											</Link>
-											<p className='mt-1' aria-hidden='true'>
+											<p className='mt-1 text-gray-500' aria-hidden='true'>
 												Shop now
 											</p>
 										</div>

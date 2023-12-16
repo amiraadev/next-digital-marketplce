@@ -10,10 +10,10 @@ import Cart from "./Cart";
 const Navbar = () => {
 	const user = null;
 	return (
-		<div className='bg-white sticky s-50 top-0 inset-x-0 h-16'>
-			<header className='relative bg-white'>
+		<div className='bg-black sticky s-50 top-0 inset-x-0 h-16'>
+			<header className='relative bg-black'>
 				<MaxWidthWrapper>
-					<div className='border-b border-gray-200'>
+					<div className='border-b border-gray-700'>
 						<div className='flex h-16 items-center'>
 							{/* Mobile nav */}
 

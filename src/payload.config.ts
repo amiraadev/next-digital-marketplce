@@ -1,3 +1,6 @@
+import { webpackBundler } from "@payloadcms/bundler-webpack";
+import { mongooseAdapter } from "@payloadcms/db-mongodb";
+import { slateEditor } from "@payloadcms/richtext-slate";
 import { buildConfig } from "payload/config";
 
 export default buildConfig ({
@@ -6,6 +9,12 @@ export default buildConfig ({
     routes:{
         admin:'/sell'
     },
-    admin:{},
+    admin:{
+        bundler:webpackBundler(),
+        meta:{}
+    },
     editor:slateEditor({}),
+    db:mongooseAdapter({
+        url:process.env.MONGO_URL!,
+    })
 })
