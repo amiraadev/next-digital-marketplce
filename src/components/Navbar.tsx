@@ -5,7 +5,6 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Icons } from "./icons";
 import NavItems from "./NavItems";
 import { buttonVariants } from "./ui/button";
-import { Span } from "next/dist/trace";
 import Cart from "./Cart";
 
 const Navbar = () => {

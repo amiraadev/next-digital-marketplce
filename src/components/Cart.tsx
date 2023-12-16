@@ -1,9 +1,9 @@
 import { Divide, ShoppingCart } from "lucide-react"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet"
-import { Separator } from "@radix-ui/react-separator"
+import { Separator } from './ui/separator'
 
 const Cart = () => {
-    const itemcount = 0
+    const itemcount = 1
     return <Sheet>
         <SheetTrigger className="group -m-2 flex items-center p-2">
             <ShoppingCart className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"></ShoppingCart>
@@ -24,7 +24,16 @@ const Cart = () => {
                  </div>
                  <div className="space-y-4 pr-6">
                     <Separator/>
-                    <div className="space-y-1 5 pr-6"></div>
+                    <div className="space-y-1 5 text-sm">
+                        <div className="flex">
+                            <span className="flex-1">Shipping</span>
+                            <span></span>
+                        </div>
+                        <div className="flex">
+                            <span className="flex-1">Transaction Fee</span>
+                            <span>1</span>
+                        </div>
+                    </div>
                  </div>
                 </>
                 ):(<div></div>)
