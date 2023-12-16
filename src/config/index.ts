@@ -2,7 +2,7 @@
 
 export const PRODUCTS_CATEGORIES = [
 	{
-		labe: "UI Kits",
+		label: "UI Kits",
 		value: "icons" as const,
 		featured: [
 			{ name: "Editor picks", href: "#", imageSrc: "/nav/ui-kits/mixed.jpg" },
@@ -11,7 +11,7 @@ export const PRODUCTS_CATEGORIES = [
 		],
 	},
 	{
-		labe: "Icons",
+		label: "Icons",
 		value: "ui_kits" as const,
 		featured: [
 			{ name: "Favorite Icon Picks", href: "#", imageSrc: "/nav/icons/bestsellers.jpg" },

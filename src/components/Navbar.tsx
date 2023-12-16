@@ -3,7 +3,7 @@
 import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Icons } from "./icons";
-import NavItems from "./NavItem";
+import NavItems from "./NavItems";
 
 const Navbar = () => {
 	return (
