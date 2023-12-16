@@ -3,12 +3,20 @@
 "use client";
 
 import { PRODUCTS_CATEGORIES } from "@/config";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NavItem from "./NavItem";
 import { useOnClickOutside } from "@/hooks/use-on-click-outside";
 
 const NavItems = () => {
 	const [activeIndex, setActiveIndex] = useState<null | number>(null);
+	useEffect(() => {
+      const handler = (e:KeyboardEvent) => {
+		if(e.key === "Escape"){
+			setActiveIndex(null)
+		}
+		document.addEventListener("keydown",handler)
+	  }
+	},[])
     const isAnyOpen = activeIndex !== null
 	const navRef = useRef<HTMLDivElement | null>(null)
 	useOnClickOutside(navRef,() => setActiveIndex(null))
